@@ -1,11 +1,11 @@
 html{
     box-sizing: border-box;
 }
-html,
-body{
-    position: relative;
-    overflow-x: hidden;
-}
+// html,
+// body{
+//     position: relative;
+//     overflow-x: hidden;
+// }
 *,
 *::before,
 *::after{
@@ -29,4 +29,36 @@ h4,
 h5,
 h6{
     margin: 0;
+}
+body{
+    font-family: "Acrom-Regular";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    background-color: #f8f8f8;
+}
+.container{
+    max-width: 1200px ;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.title-icon{
+    position: relative;
+    padding-left: 28px;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        background-image: url('../images/title-img.svg');
+        width: 16px;
+        height: 45px;
+        transform: translateY(-50%);
+    }
+}
+.btn{
+    background-color: $blu;
+    box-shadow: -4px -4px 6px #FFFFFF, 3px 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 1px;
+    color: #fff;
 }

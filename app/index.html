@@ -3,14 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Пеленг агро</title>
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+               <div class="header__left">
+                   <picture class="logo">
+                    <source srcset="images/logo-mobile.svg" media="(max-width:700px)">  
+                    <img src="images/logo.svg" alt=""> 
+                   </picture>
+                    <h3 class="header__title title-icon">загаловок</h3>
+               </div>
+               <div class="header__info">
+                   <a href="#" class="header__info-basket">
+                       <img src="images/icons/basket.svg" alt="">
+                       <p class="basket-text">В корзине <span class="basket-num">40 товаров</span></p>
+                   </a>
+                    <div class="header__info-contact">
+                       <a href="#" class="header__info-link header__info-link--email">
+                            <img src="images/icons/email.svg" alt="">
+                            <span>info@pelengagro.ru</span>
+                       </a>
+                       <a href="#" class="header__info-link header__info-link--phone">
+                           <img src="images/icons/phone.svg" alt="">
+                           <span>+7 (831) 291-32-81</span>
+                       </a>
+                    </div>
+               </div>
+            </div>
+            <div class="header__bottom">
+                <nav class="menu">
+                    <button class="menu__btn btn">меню <span></span></button>
+                    <div class="menu__list-wrapper">
+                        <div class="container">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <div class="menu__item-img">
+                                        <img src="images/content/tractor-green.png" alt="">
+                                    </div>
+                                    <div class="menu__item-links">
+                                        <div class="menu__item-title">Автоцистерны</div>
+                                        <a href="#" class="menu__item-link">Пищевые</a>
+                                        <a href="#" class="menu__item-link">Вакуумные</a>
+                                        <a href="#" class="menu__item-link">Топливозаправщики</a>
+                                    </div>
+                                </li>
+                                <li class="menu__item"> 
+                                    <div class="menu__item-img">
+                                        <img src="images/content/tractor-green.png" alt="">
+                                    </div>
+                                   <div class="menu__item-links">
+                                        <div class="menu__item-title">Прицепы</div>
+                                        <a href="#" class="menu__item-link">Вакуумные</a>
+                                        <a href="#" class="menu__item-link">Пожарные</a>
+                                        <a href="#" class="menu__item-link">Грузовые</a>
+                                        <a href="#" class="menu__item-link">Поливомоечные</a>
+                                        <a href="#" class="menu__item-link">Пищевые</a>
+                                        <a href="#" class="menu__item-link">Топливозаправщики</a>
+                                   </div>
+                                </li>
+                                <li class="menu__item">
+                                    <div class="menu__item-img">
+                                        <img src="images/content/tractor-green.png" alt="">
+                                    </div>
+                                    <div class="menu__item-links">
+                                        <div class="menu__item-title">Оборудование</div>
+                                        <a href="#" class="menu__item-link">Вакуум провод</a>
+                                        <a href="#" class="menu__item-link">Роторные нагреватели</a>
+                                        <a href="#" class="menu__item-link">Охладитель молока</a>
+                                        <a href="#" class="menu__item-link">Выпойка телят</a>
+                                        <a href="#" class="menu__item-link">Пастеризаторы</a>
+                                        <a href="#" class="menu__item-link">Доильные аппараты</a>
+                                        <a href="#" class="menu__item-link">Рекуператоры</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </di>
+                </nav>
+                <div class="header__bottom-search">
+                    <form class="header__search">
+                        <input class="header__search-input" type="text" placeholder="ПОИСК ПО КАТАЛОГУ" required>
+                        <button class="header__search-btn btn" type="submit"><img src="images/icons/search.svg" alt=""></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="top">
+        
+       <div class="top__wrapper">
+           <div class="top__slider">
+               <div class="top__slider-item"><img src="images/content/top-bg.jpg" alt=""></div>
+               <div class="top__slider-item"><img src="images/content/top-bg2.jpg" alt=""></div>
+               <div class="top__slider-item"><img src="images/content/top-bg3.jpg" alt=""></div>
+               <div class="top__slider-item"><img src="images/content/top-bg4.jpg" alt=""></div>
+           </div>
+            <div class="container">
+                <div class="top__inner">
+                    <h1 class="top__title">Сельхозтехника и оборудование для сельхоз производителей</h1>
+                </div>
+            </div>
+       </div>
+    </section>
+
+
+
+
+
+
+
+
     <script src="js/main.min.js"></script>
-    <!-- <script src="js/main.js"></script> -->
 </body>
 </html>

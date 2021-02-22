@@ -1,0 +1,12 @@
+$text: #2F2F2F;
+$blu: #131f8d;
+$back: #f8f8f8;
+
+@mixin acrom-bold {
+    font-family: "Acrom-Bold";
+    font-weight: 700;
+}
+@mixin acrom-medium {
+    font-family: "Acrom-Medium";
+    font-weight: 500;
+}
