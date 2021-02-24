@@ -32,9 +32,25 @@ $(function(){
         });
     
         $slider.slick({
+            autoplay: true,
             prevArrow: '<button type="button" class="slider-btn slider-btn--left">Next</button>',
             nextArrow: '<button type="button" class="slider-btn slider-btn--right">Next</button>',
-            
+
         });
     }
+     $('.news__inner').slick({
+         slidesToShow:3,
+         slidesToScroll: 1, 
+         autoplay: true,
+         arrows: false,
+     });
+
+    $('.tab').on('click', function(e){
+        e.preventDefault();
+        $($(this).siblings()).removeClass('tab--active');
+        $($(this).parent().siblings().find('div')).removeClass('tabs-content--active');
+    
+        $(this).addClass('tab--active');
+        $($(this).attr('href')).addClass('tabs-content--active');
+    }) 
 });

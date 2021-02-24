@@ -42,6 +42,13 @@ body{
     margin: 0 auto;
     padding: 0 15px;
 }
+.title{
+    color: #333333;
+    font-size: 31px;
+    line-height: 37px;
+    text-transform: uppercase;
+    @include acrom-bold;
+}
 .title-icon{
     position: relative;
     padding-left: 28px;
@@ -61,4 +68,9 @@ body{
     box-shadow: -4px -4px 6px #FFFFFF, 3px 3px 6px rgba(0, 0, 0, 0.23);
     border-radius: 1px;
     color: #fff;
+    transition: all .3s;
+    &:hover{
+        background-color: #1b2cc5;
+        transition: all .3s;
+    }
 }
