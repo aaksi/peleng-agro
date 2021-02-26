@@ -71,4 +71,24 @@ $(function(){
     });
 
 
+    $('.gallery__small img').on('click', function(){
+        if($('.gallery__big img').attr('src')!== $(this).attr('src')){
+
+            $('.gallery__big img').hide().attr('src', $(this).attr('src')).fadeIn(500);
+            $(this).parent().siblings().removeClass('product__gallery-small--active')
+            $(this).parent().addClass('product__gallery-small--active')
+        }
+       
+    });
+
+
+    $('.goods__slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+      });
+
+
 });
