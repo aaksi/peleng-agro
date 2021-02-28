@@ -228,7 +228,7 @@
             border-radius: 50%;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
     &__item-links{
@@ -297,6 +297,7 @@
         background-repeat: no-repeat;
         background-position: center center;
         cursor: pointer;
+        outline: none;
         &.slider-btn--left{
             background-image: url('../images/icons/slider-arrow-left.svg');
             right: 218px;
@@ -512,9 +513,6 @@
             position: absolute;
             left: 0;
             top: 0;
-            background-image: url('../images/content/tractor-green.png');
-            background-size: cover;
-            background-position: left center;
             width: 90px;
             height: 90px;
             border-radius: 50%;
@@ -1009,11 +1007,18 @@
         margin-bottom: 50px;
         margin-left: 30px;
         flex-basis: calc(33.3333% - 30px);
-
+        transition: all 0.2s;
+        &:hover{
+            box-shadow: 9px 7px 18px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s;
+        }
     }
     &__card-img{
         max-width: 326px;
         margin: 0 auto 36px ;
+        height: 264px;
+        align-items: center;
+        display: flex;
         img{
             width: 100%;
         }
@@ -1158,7 +1163,7 @@
         align-items: center;
         img{
             max-width: 100%;
-            
+            height: 100%;
             object-fit: cover;
         }
     }
@@ -1474,5 +1479,81 @@
     }
 }
 // goods end 
+
+
+
+
+// page-404 start 
+.page-404{
+    &__inner{
+        margin-top: 140px;
+        margin-bottom: 168px;
+        text-align: center;
+    }
+    &__info{
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        @include acrom-medium;
+        margin-bottom: 26px;
+    }
+    &__num{
+        position: relative;
+        display: inline-block;
+        padding: 0 110px 0 120px;
+        margin-bottom: 35px;
+        &::before,
+        &::after{
+           content: '4';
+           position: absolute; 
+           font-size: 166px;
+           line-height: 199px;
+           letter-spacing: 0.01em;
+           text-transform: uppercase;
+           @include acrom-medium;
+           color: $blu;
+           top: 50%;
+           transform: translateY(-50%);
+        }
+        &::before{
+            left: 0;
+
+        }
+        &::after{
+            right: 0;
+        }
+    }
+    &__descr{
+        font-size: 27px;
+        line-height: 32px;
+        letter-spacing: 0.01em;
+        @include acrom-medium;
+        margin-bottom: 50px;
+    }
+    &__btn{
+        padding: 18px 48px 18px 69px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 36px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 19px;
+            height: 19px;
+            background-image: url('../images/icons/arrow-left.svg');
+        }
+    }
+}
+// page-404 end 
+
+
+
+
+
+
+
+
+
 
 
